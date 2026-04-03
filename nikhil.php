@@ -43,3 +43,12 @@ $result = $num7 ** $num8;
 
 echo "<br>result is : ", $result;
 ?>
+
+<?php
+echo "<br>";
+
+
+$x = "\101\155\151\164\x20\113\165\155\141\162";
+
+echo $x;
+?> 
