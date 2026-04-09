@@ -81,14 +81,31 @@ echo strtolower($f);
 
 echo "<br>";
 echo "<h2>String Replace</h2>";
-$g = "elephent live in sea";
-echo str_replace("elephent","fish", $g);
+$g = "i am alien";
+echo str_replace("alien","human", $g);
+
+echo "<br>";
+
+$g1 = "i am thirty years old";
+echo str_replace("thirty","twenty", $g1);
+
+echo "<br>";
+
+$g2 = "elephent live in sea";
+echo str_replace("elephent","fish", $g2);
 
 
-echo "<h2>String Reverse</h2>";
+echo "<h2>String Reverse  </h2>";
 echo "<br>";
 $h = "mai kya ladle mewooo";
 echo strrev($h);
+echo "<br>";
+$h1 = "this  is  string reverse ";
+echo strrev($h1);
+
+echo "<br>";
+$h2 = "HEllo my name is kamal kant ";
+echo strrev($h2);
 
 echo "<br>";
 
