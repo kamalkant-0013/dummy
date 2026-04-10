@@ -149,8 +149,26 @@ $c = chr(72).chr(101).chr(108).chr(108).chr(111).chr(32).
      chr(84).chr(97).chr(114).chr(119).chr(97).chr(105);
 
      
-echo $c;         
+echo $c; 
 
+
+echo "<br>";
+$a5 = 55;
+$b5 = "hello";
+$c5 = True;
+$d5 = 55.36;
+$e5 = Null;
+
+
+echo (string)$a5;
+echo "<br>";
+echo (int)$b5;
+echo "<br>";
+echo (float)$a5;
+echo "<br>";
+echo (boolean)$d5;
+echo "<br>";
+echo (boolean)$e5;
 ?>  
 
 
