@@ -1,177 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
-<style>
-     body {
-          text-align: center;
-          font-size: 30px;
-          color: red;
-          line-height: 83px;
-}
-</style>    
 <body>
+    <?php 
+    echo "<h2>Php Syntax</h2>";
+    echo "<br>";
+    echo "<h3><?php ?></h3>";
+    echo "<br>";
+    echo "<p>Diff between echo and print is echo can print more then one value but print only show output of one value , print have one return value but echo does not return any value</p>";
+    echo "<br>";
+    echo "<p>Variables are used for store the values variable starts with the sign of $ and then we have to write it with alphabet it can't start with number and also - this sign is not used in variable </p>";
+    echo "<br>";
+    echo "<p>Datatypes : variable store diff types of values like number alphabet decimal ' so each show diff type of data that is called data types <br>1:string <br>2:int<br>3:float<br>4:boolean<br>5:null<br>6:object<br>7:Array</p>";
+    echo "<br>";
+    echo "<p>string : string is a datatype that show data in alphabets it is always defined in double quotes</p>";
+    echo "<br>";
+    echo "<p>diff between single and double quote is </p>";
+    echo "<br>";
+    echo "<p>php comments are two types first is single line comments and second is multi line coment <br>//this show single line comment<br>/*   this show multi line comment  */</p>";
+    echo "<br>";
+    echo "<p>Type casting is used for changing the type of data type like changing string to integer for eg :</p>";
+    echo "<br>";
+    $z = 5;
+    $z = (string) $z;
+    var_dump ($z);
+    echo "<br>";
+    echo "<p>integer data type shows numbers and float shows decimal values  eg :</p>";
+    echo "<br>";
+    $y = 55;
+    $x = 5.5;
+    var_dump ($y);
+    echo "<br>";
+    var_dump ($x);
+    echo "<br>";
+    echo "<p>strlen function is used to get the length of string for eg strlen of word Hello is :</p>";
+    echo "<br>";
+    $w = "Hello";
+    echo strlen($w);
+    echo "<br>";
+    echo "<h2>Program to print your age</h2>";
+    echo "<br>";
+    $age = 20;
+    echo "My age is :" , $age;
+    echo "<br>";
+    echo "<h2>Program to add two numbers </h2>";
+    echo "<br>";
+    $num1 = 55;
+    $num2 = 54;
+    $sum = $num1 + $num2;
+    echo "Sum is :" , $sum;
+    
+    echo "<br>";
+    echo "<h2>program to find square root of number</h2>";
+    $t = 81;
+    echo sqrt($t);
 
-<?php 
-# strlen start
+    echo "<br>";
+    echo "<h2>program to calculate length of a string </h2>";
+    $a = "Hello my name is kamal kant";
+    echo $a;
+    echo "<br>";
+    echo "string length is :";
+    echo strlen($a);
+    
+    echo "<br>";
+    echo "<h2>program to joint two strings</h2>";
 
-echo "<h2>String Length and string word count</h2>";
-echo "<br>";
-$x = "my name is kamal kant ";
-echo $x;
-echo strlen($x);
-echo ":";
-echo str_word_count($x);
-echo "<br>";
+    $string1 = "kamal";
+    $string2 = "kant";
+    $joint = $string1 . $string2;
+    echo "joint of teo strings is :" , $joint;
 
-$x1 = "i forget my lunch today ";
-echo $x1;
-echo strlen($x1);
-echo ":";
-echo str_word_count($x1);
+    echo "<br>";
+    echo "<h2>convert to string upper case</h2>";
+    $upper = "i am from himachal";
+    echo strtoupper($upper);
 
-echo "<br>";
+    echo "<br>";
+    echo "<h2>program to turn string 100 to integer using casting</h2>";
+    $b = "24";
+    $b = (integer) $b;
+    echo $b;
+    
+    echo "<br>";
+    echo "<h2>program to find value of pi </h2>";
+    echo "value of pi is :";
+    echo (pi());
 
-
-$x2 = "i dont have any pet ";
-echo $x2;
-echo strlen($x2);
-echo ":";
-echo str_word_count($x2);
-echo "<br>";
-#strlen end here
-
-$y = "i love my country";
-
-
-
-var_dump(str_contains($y , "love"));
-echo strpos($y , "love" );
-
-
-
-#strpos starts here 
-echo "<h2>String position</h2>";
-$d = "HEllo What are you doing  ";
-echo "$d";
-echo strpos($d, "you");
-echo "<br>";
-$d1 = "hello my name is kamal kant  ";
-echo "$d1";
-echo strpos($d1 ,"kamal");
-
-echo "<br>";              
-
-
-//strpos ends here
-echo "<br>";
-
-echo "<h2>String Uppercase</h2>";
-$e = "hello my name is kamal kant";
-echo strtoupper($e);
-
-echo "<br>";
-echo "<h2>String Lowercase</h2>";
-$f = "HELLO MY NAME IS KAMAL KANT";
-echo strtolower($f);
-
-echo "<br>";
-echo "<h2>String Replace</h2>";
-$g = "i am alien";
-echo str_replace("alien","human", $g);
-
-echo "<br>";
-
-$g1 = "i am thirty years old";
-echo str_replace("thirty","twenty", $g1);
-
-echo "<br>";
-
-$g2 = "elephent live in sea";
-echo str_replace("elephent","fish", $g2);
-
-
-echo "<h2>String Reverse  </h2>";
-echo "<br>";
-$h = "mai kya ladle mewooo";
-echo strrev($h);
-echo "<br>";
-$h1 = "this  is  string reverse ";
-echo strrev($h1);
-
-echo "<br>";
-$h2 = "HEllo my name is kamal kant ";
-echo strrev($h2);
-
-echo "<br>";
-
-$j = "i am from himachal pradesh";
-
-echo "<h2>String Subtract</h2>";
-echo substr($j,2,-3);
-
-echo "<br>";
-
-$l = "i am from himachal pradesh";
-
-echo substr($l,-2,3);
-
-echo "<br>";
-echo "<h2>Octal numbers</h2>";
-//octal numbers
-$a = "\110\145\154\154\157\012\115\171\040\116\141\155\145\040\151\163\040\113\141\155\141\154\040\113\141\156\164\012\111\040\141\155\040\106\162\157\155\040\164\141\162\167\141\151\012\111\040\150\141\166\145\040\144\157\156\145\040\102\103\101\012\146\162\157\155\040\126\107\103\040\115\141\156\144\151";
-
-echo nl2br($a);
-
-echo "<br>";
-echo "<h2>Hexadecimal numbers</h2>";
-
-// hexadecimal nubmers
-$b = "\x48\x65\x6c\x6c\x6f\040\x4d\x79\040\x4e\x61\x6d\x65\040\x49\x73\040\x4b\x61\x6d\x61\x6c\040\x4b\x61\x6e\x74\012\x49\040\x41\x6d\040\x46\x72\x6f\x6d\040\x54\x61\x72\x77\x61\x69\012\x49\040\x48\x61\x76\x65\040\x44\x6f\x6e\x65\040\x42\x43\x41\012\x49\x6e\040\x56\x47\x43\040\x4d\x61\x6e\x64\x69";
-
-
-echo nl2br($b);
-
-echo "<br>";
-echo "<br>";
-echo "<h2>decimal numbers</h2>";
-
-# decimal numbers
-$c = chr(72).chr(101).chr(108).chr(108).chr(111).chr(32).
-     chr(109).chr(121).chr(32).
-     chr(78).chr(97).chr(109).chr(101).chr(32).
-     chr(73).chr(115).chr(32).chr(75).chr(97).chr(109).chr(97).chr(108).chr(32).
-     chr(75).chr(97).chr(110).chr(116).chr(10).chr(73).chr(32).chr(70).chr(114).chr(111).chr(109).chr(32).
-     chr(84).chr(97).chr(114).chr(119).chr(97).chr(105);
-
-     
-echo $c; 
-
-
-echo "<br>";
-$a5 = 55;
-$b5 = "hello";
-$c5 = True;
-$d5 = 55.36;
-$e5 = Null;
-
-
-echo (string)$a5;
-echo "<br>";
-echo (int)$b5;
-echo "<br>";
-echo (float)$a5;
-echo "<br>";
-echo (boolean)$d5;
-echo "<br>";
-echo (boolean)$e5;
-?>  
-
-
-     
+    echo "<br>"
+    echo "<h2></h2>";
+    
+    
+    ?>
 </body>
 </html>

@@ -47,8 +47,15 @@ echo "<br>result is : ", $result;
 <?php
 echo "<br>";
 
-
+//octal always number 
 $x = "\101\155\151\164\x20\113\165\155\141\162";
+
+
+/// hexa always number and alphabat
+
+41 49 a f 50 59 5a
+
+61 69 a f 70 70 7a
 
 echo $x;
 ?> 
